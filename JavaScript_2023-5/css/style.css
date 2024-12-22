@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #e2eef0, #ddeaee, #deeff2);
+    font-family: Assistant, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh  ;
+}
+
+.container {
+    flex: 1; 
+}
+
+
+footer{
+    display: flex;
+    position: relative;
+}
+
+.topSec {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mainPhoto {
+    background-image: url("../img/mainPhoto.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100vw; 
+    height: 25vh;
+    display: flex; 
+    justify-self: center;
+    margin-top: 56px; 
+}
+
+.text-white h1 {
+    font-size: 2rem !important;
+}
+
+.text-white h3 {
+    font-size: 1rem !important;
+}
+
+.noResult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 2rem !important;
+    font-weight: bold;
+}
+
+
+.blackCover {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.filter {
+    display: flex;
+    justify-self: center;
+    padding-top: 30px;
+}
+
+.filter .btn {
+    margin: 0 10px;
+}
+
+.filter-button:hover {
+    background-color: transparent;
+    color: #0F1A28;
+}
+
+.filter-button.active {
+    background-color: #0F1A28;
+    color: white;
+    border: 2px solid #0F1A28;
+}
+
+#itemsContainer {
+    margin-top: 60px;
+    align-content: center;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    gap: 10px !important;
+}
+
+
+.card-img-top {
+    margin: 11px auto 0;
+    display: block; 
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    justify-self: center;
+}
+
+.flip-card .card-title{
+    margin-top: -1rem;
+    margin-bottom: 1rem; 
+}
+.flip-card .card-text {
+    margin-bottom: 1rem;
+}
+
+.flip-card-front .btn-text,
+.flip-card-back .btn-text {
+    position: absolute;
+    bottom: 20px; 
+    left: 40%;
+    transform: translateX(-50%); 
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 320px;
+    height: 390px;
+    perspective: 1000px; 
+    margin: 10px; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    transform-style: preserve-3d;
+    transition: transform 0.6s; 
+}
+
+.flipped .flip-card-inner {
+    transform: rotateY(180deg); 
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 12pt;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px grey;
+    backface-visibility: hidden; 
+}
+
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg); 
+    align-content: center;
+}
+
+.card-body {
+    margin-right: 18px;
+    margin-top: 22px;
+}
+
+.btn-primary {
+    background-color: #0F1A28;
+    border: none !important;
+    box-shadow: 0px 0px 6px grey;
+    direction: rtl;
+    text-decoration: none;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    box-shadow: none !important;
+    background-color: #0F1A28 !important;
+    border: none !important;
+}
+
+.btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    flex-direction: row-reverse;
+    color: #0F1A28;
+    text-decoration: none;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.btn-text:hover, .btn-text:focus {
+    color: #0F1A28;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-text .btn-primary {
+    margin-left: 8px; 
+}
+
+
+.flip-card-back .card-text {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.searchBox {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.form-control {
+    border-radius:  0 8px 8px 0 ;
+}
+.btn-warning {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 8px 0 0 8px;
+}
+
+.navbar .nav-item {
+    margin-bottom: 5px; 
+}
+
+.navbar .nav-link {
+    padding-top: 2px; 
+    padding-bottom: 2px;
+}
+
+.navbar {
+    background-color: #21252A;
+    font-size: 16px !important;
+}
+
+
+.custom-button {
+    background-color: #25B2DF;
+    color: white;
+    border-radius: 4px !important;
+    padding: 0 12px !important;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    width: 95%; 
+    max-width: 95%; 
+}
+
+.modal-backdrop {
+    background-color: white !important; 
+}
+
+.cardBuy {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin: 0;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    padding: 1.5rem;
+
+}
+
+.topBody {
+    display: flex;
+    align-items: center;
+}
+
+.btn-close {
+    color: #1a1a1a !important; 
+}
+
+
+.badgePlan {
+    position: absolute; 
+    left: 8px; 
+    z-index: 1; 
+    padding: 0.5rem;
+    box-sizing: border-box; 
+    border-radius: 0 8px 8px 0;
+}
+
+.cardPlanTitle {
+    padding: 0.8rem 0;
+}
+
+.pricePlan {
+    margin-bottom: 0.8rem;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.securePurchaseFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px; 
+}
+
+.costumeBuyBTN {
+    background-color: #25B2DF;
+    color: white;
+    border-radius: 20px;
+    margin-left: auto; 
+    padding: 0 12px !important;
+    font-size: 12px;
+}
+
+
+.showAll {
+    display: block;
+    margin-top: 0.8rem; 
+    text-decoration: none;
+    color: #007BE5;
+}
+
+.cardBodyInfo {
+    font-size: 12px;
+    gap: 0.5rem;
+    margin: 0; 
+}
+
+.myFooter ul li{
+    padding-left: 1.5vh;
+    font-size: 11px;
+}
+
+.myFooter  .text-end{
+    font-size: 11px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .flip-card-front .btn-text,
+    .flip-card-back .btn-text {
+        position: absolute;
+        bottom: 30px; 
+        left: 80%;
+        transform: translateX(-50%);
+        text-wrap: nowrap;
+    }
+
+    .noResult {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -4rem;
+        font-size: 2rem !important;
+        font-weight: bold;
+    }
+
+    .myFooter ul li{
+        padding-left: 1.7rem;
+        font-size: 18px;
+    }
+
+    .myFooter  .text-end{
+        font-size: 18px;
+    }
+
+    .modal-dialog {
+        width: 90%; 
+        max-width: 90%; 
+    }
+
+    .text-white h1 {
+        font-size: 4.5rem !important;
+    }
+
+    .text-white h3 {
+        font-size: 2.5rem !important;
+    }
+
+    .mainPhoto {
+        height: 54vh; 
+    }
+
+    .closeButton, .nav-link {
+        cursor: pointer;
+    }
+
+    .navbar .container {
+        max-width: 100%; 
+    }
+
+    .navbar {
+        padding-left: 30px; 
+        padding-right: 30px;
+    }
+
+    .navbar ul {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem !important;
+        padding: 0;
+        font-size: 18px;
+    }
+
+
+    .navbar .nav-link.active {
+        position: relative;
+        color: white;
+    }
+
+    .navbar .nav-link.active::after {
+        content: ""; 
+        position: absolute;
+        bottom: -17px; 
+        left: 0;
+        width: 100%;
+        height: 3px; 
+        background-color: white; 
+    }
+
+
+    .custom-button {
+        padding: 0 0.8rem !important;
+        height: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px !important;
+    }
+
+    .custom-button:hover, .costumeBuyBTN:hover, .custom-button:focus, .costumeBuyBTN:focus {
+        background-color: #4BBADE;
+        color: white;
+    }
+
+
+    .filter-button:hover {
+        background-color: #0F1A28;
+        color: white;
+    }
+
+    .btn-text {
+        padding: 0;
+        width: auto;
+    }
+
+    .card-img-top {
+        width: 23.5rem;
+        height: auto;
+        object-fit: contain;
+        margin: 6px 0 auto;
+        display: block;
+    }
+
+    #itemsContainer {
+        gap: 10px !important; 
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 420px !important; 
+        height: 470px;
+        perspective: 1000px;
+        margin: 10px;
+    }
+
+
+    .cardFlipBody {
+        margin-right: 25px; 
+        margin-top: 30px;
+    }
+
+    .myCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flip-card-front, .flip-card-back {
+        backface-visibility: hidden; 
+        transition: box-shadow 0.3s ease;
+    }
+
+    .flip-card-inner:hover {
+        box-shadow: 0 0 12px dimgrey;
+        border-radius: 15px;
+    }
+
+    .costumeBuyBTN {
+        font-size: 16px;
+    }
+
+    .cardBodyInfo {
+        font-size: 16px;
+    }
+
+    .btn-close:hover {
+        color: #000000 !important; 
+    }
+} 
+
+

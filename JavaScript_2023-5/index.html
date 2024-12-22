@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript Prog 3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Telem">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CoPilot Tips</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/Microsoft_365_Copilot_Icon.svg.png" type="image/x-icon">
+
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</head>
+
+<body>
+<div class="container">
+    <div class="topSec">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="cursor: not-allowed ">
+                    <img src="img/Microsoft_365_Copilot_Icon.svg.png" alt="Copilot Logo"  height="36">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://copilot.microsoft.com/" target="_blank">CoPilot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor: not-allowed">תכונות</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor: not-allowed">לעסקים</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">טיפים</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor: not-allowed">אודות</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn custom-button" onclick="popFunc()">קנו עכשיו</a>
+                        </li>
+                    </ul>
+                    <div class="searchBox">
+                        <input type="text" id="searchInput" class="form-control" placeholder="הקלידו כאן">
+                        <button class="btn btn-warning ms-2" onclick="searchFunc()" style="cursor: pointer"><img
+                                src="img/search%20(1).svg" alt="Copilot Logo" height="20" class="search"/></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mainPhoto">
+            <div class="blackCover">
+                <div class="text-white">
+                    <h1 class="display-4 fw-bold">10 טיפים לשימוש ב-CoPilot</h1>
+                    <h3 class="fw-semibold ">למדו כיצד להפיק את המיטב מהעוזר האישי</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter">
+        <button class="filter-button btn btn-outline-dark btn-lg" onclick="filter('תוכן', event)" value="תוכן">תוכן</button>
+        <button class="filter-button btn btn-outline-dark btn-lg" onclick="filter('טכנולוגיה', event)" value="טכנולוגיה">טכנולוגיה
+        </button>
+        <button class="filter-button btn btn-outline-dark btn-lg" onclick="filter('אישי', event)" value="אישי">אישי</button>
+    </div>
+
+    <div id="itemsContainer">
+
+    </div>
+</div>
+</body>
+
+
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center myFooter">
+            <!-- קישורים מהירים -->
+            <div class="col-md-10 d-flex justify-content-start">
+                <ul class="list-unstyled d-flex flex-wrap mb-0">
+                    <li><a href="#" class="text-white text-decoration-none" style="cursor: not-allowed">צרו קשר עם 
+                        CoPilot</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" style="cursor: not-allowed">פרטיות</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" style="cursor: not-allowed">תנאי שימוש</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" style="cursor: not-allowed">אודות</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" style="cursor: not-allowed">נגישות</a></li>
+                </ul>
+            </div>
+
+            <!-- זכויות יוצרים -->
+            <div class="col-md-2 text-end">
+                <p class="mb-0">© 2024 CoPilot Tips</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</html>
